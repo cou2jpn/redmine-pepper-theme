@@ -163,13 +163,9 @@
         &.selected
           font-weight: bold // Override Redmine default
   #quick-search
-    text-align: right
-    form
-      display: block
-      float: left
+    white-space: nowrap
     a
-      color: $text_color
-      text-decoration: none
+      color: $link_color
     input
       +border-radius(1em)
       border-top: 1px solid #848484
@@ -177,13 +173,11 @@
       border-bottom: 1px solid #e1e1e1
       border-left: 1px solid #c1c1c1
       +box-shadow(inset rgba(0,0,0,0.2) 1px 1px 2px)
-      display: inline
       margin: 0
       padding: 0.2em 1em
     select
       // The Jump to project dropdown
-      float: right
-      width: $jump_to_project_width
+      display: none
 
 #main
   +box-shadow(rgba(0,0,0,0.2) 1px 1px 4px)
