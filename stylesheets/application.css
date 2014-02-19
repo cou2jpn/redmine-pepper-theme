@@ -800,12 +800,10 @@ table.progress tr td.todo {
 #main #content {
   background: white;
   border: 0;
-  margin: 18px 254px 18px 18px;
+  padding-top: 9px;
   min-height: 21em;
-  padding: 0;
-  width: auto;
 }
-/* line 203, ../sass/_layout.sass */
+/* line 201, ../sass/_layout.sass */
 #main #sidebar {
   background: white url("../images/sidebar_separator.png") no-repeat 0 100%;
   background: url("../images/sidebar_separator.png") 0 100% no-repeat, url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNlZmVmZWYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=') repeat scroll 0 0 transparent;
@@ -820,32 +818,20 @@ table.progress tr td.todo {
   -o-border-radius: 0 0 4px 0;
   border-radius: 0 0 4px 0;
   float: right;
-  padding: 18px;
   padding-bottom: 72px;
-  width: 200px;
+  width: 23%;
+  position: relative;
 }
 /* line 211, ../sass/_layout.sass */
-#main #sidebar h3:first-child {
-  color: #333333;
-  font-size: 1.4em;
-  margin-top: 0.45em;
-}
-/* line 215, ../sass/_layout.sass */
-#main #sidebar label {
-  clear: both;
-  font-weight: normal;
-  width: auto;
-}
-/* line 220, ../sass/_layout.sass */
 #main.nosidebar #content {
   margin-right: 18px;
 }
-/* line 222, ../sass/_layout.sass */
+/* line 213, ../sass/_layout.sass */
 #main.nosidebar #sidebar {
   display: none;
 }
 
-/* line 225, ../sass/_layout.sass */
+/* line 216, ../sass/_layout.sass */
 .box {
   background-color: #eeeeef;
   background: #eeeeef url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -866,12 +852,12 @@ table.progress tr td.todo {
   margin: 9px 0;
   padding: 18px;
 }
-/* line 227, ../sass/_layout.sass */
+/* line 218, ../sass/_layout.sass */
 .box h3:first-child {
   margin-top: 0;
 }
 
-/* line 230, ../sass/_layout.sass */
+/* line 221, ../sass/_layout.sass */
 #footer {
   background: none;
   border: none;
@@ -881,7 +867,7 @@ table.progress tr td.todo {
   text-align: center;
 }
 
-/* line 238, ../sass/_layout.sass */
+/* line 229, ../sass/_layout.sass */
 #ajax-indicator {
   background: black;
   background: rgba(0, 0, 0, 0.5);
@@ -903,7 +889,7 @@ table.progress tr td.todo {
   top: 9px;
   width: 100px;
 }
-/* line 254, ../sass/_layout.sass */
+/* line 245, ../sass/_layout.sass */
 #ajax-indicator span {
   background: none;
   padding: 0;
@@ -1182,11 +1168,20 @@ form fieldset table {
   margin-top: 0;
 }
 
-/* line 3, ../sass/_sidebar.sass */
-#sidebar li a {
-  display: block;
+/* line 2, ../sass/_sidebar.sass */
+#sidebar > * {
+  position: relative;
+  left: 18px;
 }
 /* line 5, ../sass/_sidebar.sass */
+#sidebar h3 {
+  border-bottom: 1px solid #cccccc;
+}
+/* line 7, ../sass/_sidebar.sass */
+#sidebar .contextual {
+  margin-right: 36px;
+}
+/* line 11, ../sass/_sidebar.sass */
 #sidebar li a.selected {
   background-color: #e4e4ef;
   color: #333333;
@@ -1195,12 +1190,21 @@ form fieldset table {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  padding-left: 1em;
   text-decoration: none;
 }
-/* line 12, ../sass/_sidebar.sass */
-#sidebar li label a {
+/* line 16, ../sass/_sidebar.sass */
+#sidebar label {
+  clear: both;
+  font-weight: normal;
+  width: auto;
+}
+/* line 20, ../sass/_sidebar.sass */
+#sidebar label a {
   display: inline;
+}
+/* line 22, ../sass/_sidebar.sass */
+#sidebar img {
+  vertical-align: text-bottom;
 }
 
 /* line 3, ../sass/_tables.sass */
