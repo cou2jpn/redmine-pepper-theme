@@ -48,11 +48,13 @@ hr
 // The subproject breadcrumb navigation
 #header
   h1
-    a.root,
-    a.ancestor
-      color: $text_color*3
+    a
+      color: $text_color*2
       font-size: 1em
       text-decoration: none
       &:hover
         color: $link_hover_color
         text-decoration: underline
+    .root,
+    .ancestor
+      color: $text_color*3

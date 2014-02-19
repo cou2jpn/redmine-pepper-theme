@@ -71,17 +71,20 @@ hr {
 }
 
 /* line 51, ../sass/_general_elements.sass */
-#header h1 a.root,
-#header h1 a.ancestor {
-  color: #999999;
+#header h1 a {
+  color: #666666;
   font-size: 1em;
   text-decoration: none;
 }
-/* line 56, ../sass/_general_elements.sass */
-#header h1 a.root:hover,
-#header h1 a.ancestor:hover {
+/* line 55, ../sass/_general_elements.sass */
+#header h1 a:hover {
   color: #a2c2e2;
   text-decoration: underline;
+}
+/* line 58, ../sass/_general_elements.sass */
+#header h1 .root,
+#header h1 .ancestor {
+  color: #999999;
 }
 
 /* line 1, ../sass/_general_classes.sass */
