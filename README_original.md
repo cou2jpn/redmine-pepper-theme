@@ -1,7 +1,3 @@
-This repository is forked from https://github.com/koppen/redmine-pepper-theme.git .
-Thankful to koppen.
-
-
 Pepper - a Redmine theme
 ========================
 
@@ -44,9 +40,9 @@ Installing
 Using git, you can simply clone the theme into your Redmine theme directory like so:
 
     $ cd /path/to/redmine/public/themes
-    $ git clone https://github.com/cou2jpn/redmine-pepper-theme.git pepper
+    $ git clone https://github.com/koppen/redmine-pepper-theme.git pepper
 
-or you can download the theme archive from https://github.com/cou2jpn/redmine-pepper-theme/tarball/master and follow the instructions at http://www.redmine.org/projects/redmine/wiki/Themes to install it.
+or you can download the theme archive from https://github.com/koppen/redmine-pepper-theme/tarball/master and follow the instructions at http://www.redmine.org/projects/redmine/wiki/Themes to install it.
 
 
 Modifying
@@ -59,6 +55,17 @@ To build the final CSS:
     $ compass compile
 
 Never edit stylesheets/application.css as it will be overwritten by Compass.
+
+
+Screenshots
+-----------
+
+![Redmine homepage](http://mentalized.net/files/journal/pepper/pepper-homepage.png)
+![Project overview](http://mentalized.net/files/journal/pepper/pepper-project_overview.png)
+![Issues list](http://mentalized.net/files/journal/pepper/pepper-issue_list.png)
+![Issue](http://mentalized.net/files/journal/pepper/pepper-issue.png)
+![New issue](http://mentalized.net/files/journal/pepper/pepper-new_issue.png)
+![Administration settings](http://mentalized.net/files/journal/pepper/pepper-settings.png)
 
 
 Credits
