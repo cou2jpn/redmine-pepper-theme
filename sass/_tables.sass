@@ -1,15 +1,15 @@
 // Tables are for tabular data - except when they aren't...
 
-table
+table.attributes
   border-collapse: collapse
   width: 100%
-th, td
-  padding: 0.2em 0.5em
-td
-  p
-    margin: 0
-th
-  text-align: left
+  th, td
+    padding: 0.2em 0.5em
+  td
+    p
+      margin: 0
+  th
+    text-align: left
 
 table.list
   border: 0
@@ -38,3 +38,11 @@ table.list
     text-align: left
   th.subject
     padding-left: 20px
+
+div.wiki
+  table
+    margin: 0.5em 1em
+  th
+    background: $separator_color
+  th, td
+    padding: 0.1em 0.8em

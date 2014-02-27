@@ -1197,23 +1197,20 @@ form fieldset table {
 }
 
 /* line 3, ../sass/_tables.sass */
-table {
+table.attributes {
   border-collapse: collapse;
   width: 100%;
 }
-
 /* line 6, ../sass/_tables.sass */
-th, td {
+table.attributes th, table.attributes td {
   padding: 0.2em 0.5em;
 }
-
 /* line 9, ../sass/_tables.sass */
-td p {
+table.attributes td p {
   margin: 0;
 }
-
 /* line 11, ../sass/_tables.sass */
-th {
+table.attributes th {
   text-align: left;
 }
 
@@ -1255,6 +1252,19 @@ table.list td.id {
 /* line 39, ../sass/_tables.sass */
 table.list th.subject {
   padding-left: 20px;
+}
+
+/* line 43, ../sass/_tables.sass */
+div.wiki table {
+  margin: 0.5em 1em;
+}
+/* line 45, ../sass/_tables.sass */
+div.wiki th {
+  background: #e4e4ef;
+}
+/* line 47, ../sass/_tables.sass */
+div.wiki th, div.wiki td {
+  padding: 0.1em 0.8em;
 }
 
 /* line 6, ../sass/_tabs.sass */
