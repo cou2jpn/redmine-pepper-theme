@@ -56,6 +56,10 @@ table.issues
 
   .assigned-to-me
     font-weight: bold
+  .odd, .even
+    background: #ffffff
+  .private
+    background: #ffefef
 
 // Issue page
 form
@@ -87,8 +91,3 @@ form
   +box
   h3
     margin-top: 0
-
-@for $number from 0 to 10
-  table .priority-#{$number + 1}
-    background: #ffffff - (#000404 * $number)
-    color: #333333 + (#110000 * $number)
