@@ -1699,6 +1699,12 @@ table.entries td.checkbox {
 /* line 1, ../sass/page_specific/_wiki.sass */
 .wiki h1 {
   border: 0;
+  margin-bottom: 1em;
+}
+
+/* line 4, ../sass/page_specific/_wiki.sass */
+.wiki h2, h3, h4 {
+  margin-top: 1.5em;
 }
 
 @media all and (max-device-width: 767px), all and (max-width: 449px) {
